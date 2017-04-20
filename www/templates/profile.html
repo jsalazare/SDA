@@ -1,0 +1,61 @@
+
+<ion-view title="PROFILE" left-buttons="leftButtons" class="animated bounceInUp">
+
+  <ion-content padding="true" class="">
+    
+
+
+    <div class="divImage">
+    <svg width="500" height="250" class="profileImg">
+			
+				<circle cx="160" cy="114" r="100" stroke="#e97269 " stroke-width="3" fill="none"></circle>
+				<circle cx="160" cy="114" r="90" stroke="  #59c0be" stroke-width="3" fill="none" />
+				<circle cx="160" cy="114" r="80" stroke=" #f2c36a " stroke-width="6" fill="none" />
+				<defs>
+					<clipPath id="circleView">
+						<circle cx="160" cy="114" r="70" fill="#FFFFFF" />
+					</clipPath>
+				</defs>
+				<image xlink:href="img/ivanak.jpg" clip-path="url(#circleView)" class="FitImage"/>
+			
+		</svg>
+    </div>
+    <div class="row maincontainer">
+    <div class="col">
+     <div class="row">
+     <h2 class="profileName">Ivana Koceva</h2>
+
+
+    </div>
+    <div class="row tabDiv">
+      <div class="row tabBar">
+     <div class="col">
+    <button class="button button-positive  button-block btnprofile" ng-click="template='personal'">Personal</button>
+    </div>
+    <div class="col">
+   <button class="button button-positive  button-block btnprofile" ng-click="template='stats'">Stats</button>
+    </div>
+    <div class="col">
+    <button class="button button-positive  button-block btnprofile" ng-click="template='history'"> History</button>
+    </div>
+    </div>
+    <br>
+    <div class="row" style="margin-left:-22em;">
+    <ng-include src="template"></ng-include>
+    </div>
+
+   </div>
+
+    </div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+     
+  </ion-content>
+</ion-view>

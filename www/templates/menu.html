@@ -1,0 +1,35 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar >
+    <ion-nav-view hide-nav-bar="true" name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right" id="side-menu21">
+    <ion-header-bar class="bar-assertive">
+      <div class="title">Menu</div>
+    </ion-header-bar>
+    <ion-content padding="false" class="side-menu-right has-header ">
+      <ion-list id="menu-list1">
+
+        <ion-item id="menu-list-item2" ui-sref="menu.landingpage" class="item-icon-left" menu-close="">Home
+          <i class="icon ion-home"></i>
+        </ion-item>
+        <ion-item id="menu-list-item2" ui-sref="menu.profile" class="item-icon-left" menu-close="">Profile
+          <i class="icon ion-person"></i>
+        </ion-item>
+        <ion-item id="menu-list-item3" ui-sref="menu.landingpage" class="item-icon-left" menu-close="">My shares
+          <i class="icon ion-happy-outline"></i>
+        </ion-item>
+        <ion-item id="menu-list-item4" ui-sref="menu.owlview" class="item-icon-left" menu-close="">Owl view
+          <i class="icon ion-eye"></i>
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

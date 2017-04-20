@@ -1,0 +1,52 @@
+<ion-view title="AcceptCard">
+	<ion-content>
+		<div class="header">
+			<span class=" icon ion-close closeBtn" ng-click="closeAcceptPopup()"> </span>
+
+		</div>
+		<div class="container" ng-controller="SettingsCtrl">
+			<h4 class="acceptCard">You have accepted this ride!</h4>
+			<div class="gradientAcceptCard">
+				<h1 class="timerheading" id="timerid">{{date}}</h1>
+			</div>
+			      <div class="row">
+            <div id="mapid">
+               </div>
+  </div>
+        
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" height="150">
+				<circle cx="80" cy="57" r="5" stroke="#59c0be" stroke-width="4" fill="white" />
+				<text x="15" y="57" font-family: 'Fredoka One'; font-size="15px" fill="#e97269 " alignment-baseline="central">{{card.departure.properties.name}} KA</text>
+				<text x="15" y="74" font-family: 'Fredoka One'; font-size="12px" fill="#59c0be" alignment-baseline="central">Karlsruhe {{card._id}}</text>
+				<text x="15" y="87" font-family: 'Fredoka One';font-size="2px" fill="#bcc9d5 " alignment-baseline="central">Pick up: KA hbf</text>
+
+				<line x1="90" y1="57" x2="93" y2="57" style="stroke:#59c0be  ;stroke-width:3" />
+				<line x1="95" y1="57" x2="98" y2="57" style="stroke:#59c0be ;stroke-width:3" />
+				<line x1="100" y1="57" x2="105" y2="57" style="stroke:#59c0be  ;stroke-width:3" />
+				<line x1="107" y1="57" x2="117" y2="57" style="stroke:#59c0be  ;stroke-width:3" />
+				<line x1="119" y1="57" x2="134" y2="57" style="stroke:#59c0be  ;stroke-width:3" />
+				<line x1="136" y1="57" x2="205" y2="57" style="stroke:#59c0be ;stroke-width:3" />
+				<!--   <circle cx="152" cy="165" r="10" fill="#59c0be  " />-->
+
+				<polygon fill="none" stroke="#59c0be" stroke-width="3" points="210,47 225,58 210,68" />
+				<text x="235" y="57" alignment-baseline="central" font-family: 'Fredoka One'; font-size="15px" fill="#e97269">{{card.destiny.properties.name}} & GAD</text>
+				<text x="235" y="74" alignment-baseline="central" font-family: 'Fredoka One'; font-size="12px" fill="#59c0be">Karlsruhe</text>
+				<text x="235" y="87" alignment-baseline="central" font-family: 'Fredoka One'; font-size="9px" fill="#bcc9d5">Drop off:</text>
+
+				<polygon>
+
+			</svg>
+			<div class="row attendeeList">
+				<div ng-repeat="user in previousUsers track by $index" class="col-20">
+					<img src="img/{{user.src}}" class="thumbnailAt attendeeListAcceptCard AtendeeAccept">
+				</div>
+				<div class="col-20">
+					<div class="thumbnailAt attendeeListAcceptCard AtendeeAccept" ng-click="InviteOthers()">
+						<span class="icon ion-plus btnAdd"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

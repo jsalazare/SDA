@@ -1,0 +1,86 @@
+<ion-view title='<img class="title-image" src="img/shareaLogoHeader.jpg" />'>
+	<ion-nav-bar class="bar-balanced navbarLogo">
+
+
+	</ion-nav-bar>
+	<ion-content padding="true" class="has-header">
+		<ion-pane>
+
+			<!--<button class="button button-positive  button-block">{{numberOfSubs}}</button>
+
+      <div>
+        <img src="img/Suggestion.gif" class="animation">
+      </div>-->
+
+			<td-cards>
+
+
+				<td-card ng ng-repeat="card in cards" on-destroy="cardDestroyed($index);" on-partial-swipe="cardPartialSwipe(amt)" on-swipe-left="saveLastCard($index); CancelRide();"
+					on-swipe-right="cardSwiped(myUserId,card._id); AcceptRide();">
+					<div>
+						<div class="no-text" ><span class="icon ion-close-round"></span></div>
+						<div class="yes-text" ><span class="icon ion-checkmark-round"></span></div>
+
+						<div class="gradient">
+							<h3 class="timerheading" id="timerid">{{date}}</h3>
+						</div>
+                       
+						<div class="row">
+                          
+                         <img src="img/restaurant.png" class="restaurantCard">
+						</div>
+                         <h4 style="font-family:Fredoka One;color:#59c0be;margin-left:5em;">Share a meal with:</h4>
+						<div class="row attendeeList">
+							<div ng-repeat="user in users track by $index" class="col-20">
+								<img src="img/{{user.src}}" class="thumbnailAt AtendeeAccept" ng-click="alertMe()">
+							</div>
+
+							<!--<div class="col-20 col-offset-10"><img src="img/ivana.jpg" class="thumbnailAt AtendeeAccept" >Ivana </div>
+              <div class="col-20"><img src="img/ines.jpg" class="thumbnailAt AtendeeAccept"> Ines </div>
+              <div class="col-20"><img src="img/salazar.jpg" class="thumbnailAt AttendeeCancel"> Javier </div>
+                collection-repeat="user in users"
+
+              <div class="col-20"><img src="img/tala.jpg" class="thumbnailAt AtendeeAccept" ng-click="showProfile()" ng-controller="JoinEventCtrl">Tala</div>-->
+						</div>
+						<!-- <button class="button button-positive  button-block btn2">Cancel</button>-->
+					</div>
+				</td-card>
+			</td-cards>
+
+			<div class="round-button">
+				<div class="round-button-circle" style="  background-image: url('img/arrow.png');" ng-click="goBack()">
+
+				</div>
+
+
+		</ion-pane>
+
+	</ion-content>
+
+
+	<!--  <script id="templates/modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">New Contact</h1>
+          <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">First Name</span>
+              <input ng-model="newUser.firstName" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Last Name</span>
+              <input ng-model="newUser.lastName" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input ng-model="newUser.email" type="text">
+            </label>
+            <button class="button button-full button-positive" ng-click="createContact(newUser)">Create</button>
+          </div>
+        </ion-content>
+      </ion-modal-view>
+    </script> -->
+</ion-view>

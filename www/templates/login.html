@@ -1,0 +1,30 @@
+<ion-view title="Login" hide-nav-bar="true" cache-view="false" id="page4" style="background-color:#fffff;" class="animated bounceInUp">
+  <ion-content padding="true" class="manual-ios-statusbar-padding">
+    <div id="login-markdown1" ng-if="error" class="show-list-numbers-and-dots error-box">
+      <p style="color:#FFFFFF;">{{error}}</p>
+    </div>
+    <div class="spacer" style="width: 320px; height: 5px;"></div>
+    <div class="logo">
+      <img src="img/Suggestion.gif" style="display: block; width: 60%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <form id="login-form1" class="list">
+      <div class="spacer" style="width: 320px; height: 5px;"></div>
+      <label class="item item-input item-floating-label font spancolor">
+
+        <span class="input-label">Email
+        </span>
+        <input type="email" placeholder="Email">
+      </label>
+      <label class="item item-input item-floating-label font spancolor" id="login-input9">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="Password">
+      </label>
+      <div class="spacer" style="width: 300px; height: 26px;"></div>
+      <button id="login-button1" ng-click="login()" style="color:#e97269 ;border-radius:40px 40px 40px 40px;font-family:Fredoka One;" class="button button-light  button-block btnlogin">Log in</button>
+      <a ui-sref="signUp" id="login-button2" style="color:#59c0be ;" class="button button-light  button-block button-clear">Or create an account</a>
+      <a ui-sref="forgotPass" id="login-button6" style="color:#59c0be ;" class="button button-light  button-block button-clear">Forgot Password?</a>
+      <hr>
+      <button id="login-button1" ng-click="loginAnonymous()" style="color:#EC6602;border-radius:40px 40px 40px 40px;font-family:Fredoka One" class="button button-light  button-block btnlogin">Log in as anonymous</button>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+<ion-view title="ForgotPass" hide-nav-bar="true" cache-view="false" id="page6" class="forgotpassbackground">
+  <ion-content padding="true" class="manual-ios-statusbar-padding">
+    <div id="forgotPass-markdown3" class="show-list-numbers-and-dots"></div>
+    <form id="forgotPass-form8" class="list formforgetpass">
+      <h4 id="forgotPass-heading3" style="color:white;text-align:center;font-family:Fredoka One;">Forgot password?</h4>
+      <div id="forgotPass-markdown6" style="text-align:center;" class="show-list-numbers-and-dots">
+        <p style="color:white;">Type down your email and we will send you a verification mail to reset your password</p>
+      </div>
+      <label class="item item-input item-floating-label forgotpass spancolorforgotpass" id="forgotPass-input17">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="Email" ng-model="data.email">
+      </label>
+      <button id="forgotPass-button13" ng-click="forgotPass()" style="border-radius:40px 40px 40px 40px;" class="button button-positive  button-block btnsendemail">Send email</button>
+      <a ui-sref="login" id="forgotPass-button11" style="border-radius:40px 40px 40px 40px;" class="button button-positive  button-block btnback">Back</a>
+    </form>
+  </ion-content>
+</ion-view>

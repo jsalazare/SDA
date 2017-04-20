@@ -1,0 +1,71 @@
+<ion-view title="InviteCard">
+	<ion-content>
+		<div class="header">
+			<span class=" icon ion-close closeBtn" ng-click="closeInvitePopup()"> </span>
+		</div>
+		<div class="container">
+			<h5 class="inviteCard">Happiness is double when shared!</h5>
+			<div class="inviteSquare">
+				<svg xmlns="http://www.w3.org/2000/svg" height="70">
+					<circle cx="50" cy="17" r="5" stroke="#59c0be" stroke-width="4" fill="white" />
+					<text x="10" y="17" font-family: 'Fredoka One'; font-size="15px" fill="#e97269 " alignment-baseline="central">{{card.departure.properties.name}} KA</text>
+					<text x="10" y="34" font-family: 'Fredoka One'; font-size="12px" fill="#59c0be" alignment-baseline="central">Karlsruhe {{card._id}}</text>
+					<text x="10" y="47" font-family: 'Fredoka One';font-size="9px" fill="#bcc9d5 " alignment-baseline="central">Pick up: KA hbf</text>
+
+					<line x1="59" y1="17" x2="62" y2="17" style="stroke:#59c0be  ;stroke-width:3" />
+					<line x1="64" y1="17" x2="68" y2="17" style="stroke:#59c0be ;stroke-width:3" />
+					<line x1="70" y1="17" x2="74" y2="17" style="stroke:#59c0be  ;stroke-width:3" />
+					<line x1="76" y1="17" x2="84" y2="17" style="stroke:#59c0be  ;stroke-width:3" />
+					<line x1="86" y1="17" x2="91" y2="17" style="stroke:#59c0be  ;stroke-width:3" />
+					<line x1="93" y1="17" x2="163" y2="17" style="stroke:#59c0be ;stroke-width:3" />
+					<line x1="169" y1="17" x2="200" y2="17" style="stroke:#59c0be ;stroke-width:3" />
+					<!--   <circle cx="152" cy="165" r="10" fill="#59c0be  " />-->
+
+					<polygon fill="none" stroke="#59c0be" stroke-width="3" points="205,7 220,18 205,28" />
+					<text x="225" y="17" alignment-baseline="central" font-family: 'Fredoka One'; font-size="15px" fill="#e97269">{{card.destiny.properties.name}} & GAD</text>
+					<text x="225" y="34" alignment-baseline="central" font-family: 'Fredoka One'; font-size="12px" fill="#59c0be">Karlsruhe</text>
+					<text x="225" y="47" alignment-baseline="central" font-family: 'Fredoka One'; font-size="15px" fill="#bcc9d5">Drop off:</text>
+
+					<polygon>
+
+				</svg>
+			</div>
+			<div class="row iniviteUsers">
+				<h6 class="selectText">Type user name or Drag to select:</h6>
+			</div>
+			<div class="row">
+				<div class="col">
+
+					<div class="btnInvite AtendeeAccept" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
+						<span class="icon ion-plus btnAdd"></span>
+					</div>
+
+
+				</div>
+
+				<div class="col">
+<label class="item item-input searchUsername">
+  <input type="text" placeholder="User name">
+</label>
+		</div>
+			</div>
+			<h6 class="suggestion"><i>Suggestion:</i></h6>
+			<div class="row attendeeListInviteCard">
+
+				<div ng-repeat="user in previousUsers track by $index" class="col-20"  ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="true">
+					<img src="img/{{user.src}}" class="thumbnailAt attendeeListAcceptCard AtendeeInvite">
+					<h6 class="invitedName">{{user.name}}</h6>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top:0.2em;">
+				<button ng-click="switchOwlview();" class="button button-calm btnInviteCard">
+                    Switch to Owl view
+                </button>
+			</div>
+			<div class="row" style="margin-top:0.2em;">
+				<button class="button button-calm btnInviteCard" ng-click="closeInvitePopup();">Send an invitation</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

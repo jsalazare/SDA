@@ -1,0 +1,55 @@
+<ion-view title="Profile">
+	<ion-content ng-controller="CardsCtrl">
+		<div class="header">
+			<span class=" icon ion-close closeBtn" ng-click="closeAlertPopup()"></span>
+
+		</div>
+
+		<svg width="500" height="250" class="popupProfilesvg">
+
+			<circle cx="180" cy="114" r="100" stroke="#e97269 " stroke-width="3" fill="none"></circle>
+			<circle cx="180" cy="114" r="90" stroke="  #59c0be" stroke-width="3" fill="none" />
+			<circle cx="180" cy="114" r="80" stroke=" #f2c36a " stroke-width="6" fill="none" />
+			<defs>
+				<clipPath id="circleView">
+					<circle cx="180" cy="114" r="70" fill="#FFFFFF" />
+				</clipPath>
+			</defs>
+			<image width="390" height="240" xlink:href="img/ivanak.jpg" clip-path="url(#circleView)" />
+
+		</svg>
+
+		<div ng-hide="change">
+			<h3 class="profileUserName">Ivana Koceva</h3>
+			<span class="icon ion-chevron-down ExpandArrow" ng-click="showMore()"></span>
+			<div class="row">
+				<div class="col">
+					<button class="button button-positive btnTab" ng-class="{true:'btnTabClicked',false:'btnTab'}[isClickedpersonal]" ng-click="SwitchTabPersonal();template='popuppersonal'">
+            Personal
+</button>
+				</div>
+				<div class="col">
+					<button class="button button-positive icon ion-android-lock btnTab" ng-class="{true:'btnTabClicked',false:'btnTab'}[isClickedhistory]"
+						ng-click="SwitchTabHistory(); template='popuphistory'">
+  History
+</button>
+				</div>
+			</div>
+			<div class="row textTab">
+
+				<ng-include src="template"></ng-include>
+			</div>
+			<div class="row">
+				<button class="button button-positive btnChat" ng-click="chat();">
+  Chat time?
+  </button>
+			</div>
+
+		</div>
+
+
+
+
+
+	</ion-content>
+</ion-view>

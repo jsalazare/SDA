@@ -1,0 +1,545 @@
+.platform-ios .manual-ios-statusbar-padding{
+    padding-top:20px;
+}
+.manual-remove-top-padding{
+    padding-top:0px; 
+}
+.manual-remove-top-padding .scroll{
+    padding-top:0px !important;
+}
+ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+    margin-left:-10px;
+    margin-right:-10px;
+}
+
+
+ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+    border-radius:0px;
+    border-left:0px;
+    border-right: 0px;
+}
+.show-list-numbers-and-dots ul{
+    list-style-type: disc;
+    padding-left:40px;
+    }
+.show-list-numbers-and-dots ol{
+    list-style-type: decimal;
+    padding-left:40px;
+}
+
+
+
+
+
+
+
+.acceptCard
+{
+	
+	margin-left:3em;
+}
+.btnAccept
+{
+  
+	background-color:#59c0be !important;
+	border-radius:5% !important;
+	margin-left:5em !important;
+	width:45% !important;
+	height:5% !important;
+	margin-top:0.5em !important;
+}
+
+.atendee
+{
+	color:#e97269  ;
+ 	text-align:left;
+	margin-left:1em;
+	
+	
+}
+.thumbnailAt
+{  
+	border-radius:60%;
+	width:90%;
+	height:55px;
+}
+.thumbnailUserName
+{
+  font-family: Fredoka One;
+  text-align: center;
+  margin-left:-1em;
+  color:#59c0be;
+
+}
+.attendeeList
+{
+  margin-top:1.5em;
+
+}
+.attendeeListAcceptCard
+{
+  margin-top:-3em;
+
+}
+.attendeeListInviteCard
+{
+
+margin-top:1em !important;
+}
+
+.attendeeListInviteCard
+{
+  margin-top:3.5em !important;
+
+}
+.AtendeeAccept
+{
+	 border:5px solid #59c0be;
+}
+.AttendeeCancel
+{
+	 border:5px solid #e97269;
+}
+
+.AtendeeInvite
+{
+	 border:5px solid #f2c36a  ;
+}
+.svgCard
+{
+	margin-top:-2em;
+}
+.scroll 
+{
+    height: 100%;
+}
+
+*{
+
+  font-family: Fredoka One;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, fieldset, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: auto;
+}
+
+.bar-balanced
+{
+background-color:white !important;
+
+}
+.padding
+{
+  margin-top:40px !important;
+
+}
+@font-face 
+{
+    font-family: 'Fredoka One';
+    src: url('FredokaOne-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gradient
+ {
+    width:16em;
+    height:3.0em;
+    margin-top:1.5em;
+    border-radius:15px;
+    background: -webkit-linear-gradient(left, #e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* Standard syntax (must be last) */
+
+  
+}
+
+.timerheading
+{
+color:white;text-align:center;font-size:2.5em;
+
+
+}
+.gradientAcceptCard
+{
+    width:22em;
+    height:4.0em;
+    margin-top:1.5em;
+    border-radius:15px;
+    background: -webkit-linear-gradient(left, #e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* Standard syntax (must be last) */
+
+}
+
+.myPopup > .popup { border-radius: 5px !important; width: 350px !important;
+  height: 480px;}
+.mapImage
+{
+  width:18em;
+  height:10em;
+
+}
+.container
+{
+
+  margin-top:0.5em;
+  
+}
+.profileUserName
+{
+
+  text-align: center;
+  font-family: Fredoka One;
+  color:#59c0be;
+  margin-left:0.5em;
+}
+.ExpandArrow
+{
+  margin-left:12em;
+
+}
+.closeBtn
+{
+  
+  margin-left:20em;
+}
+.btnTab
+{
+  width:10em !important;
+  border-radius:11px !important;
+  font-family: Fredoka One !important;
+  background-color: #a6a6a6 !important;
+}
+
+.btnTabClicked
+{
+
+  width:10em !important;
+  border-radius:11px !important;
+  font-family: Fredoka One !important;
+  background-color: #59c0be !important;
+}
+.textTab
+{
+  margin-top:3em !important;
+
+}
+.btnChat
+{
+width:12em !important;
+margin-left:4.5em !important;
+margin-top: 3em !important;
+border-radius:11px !important;
+font-family:Fredoka One;
+background: -webkit-linear-gradient(left, #e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Fx 3.6 to 15 */
+  background: linear-gradient(to right,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* Standard syntax (must be last) */
+
+}
+.acceptCard
+{
+color:#59c0be;
+font-family: Fredoka One;
+text-align: center;
+margin-left:1em;
+
+} 
+
+.btnAdd
+{
+  margin-top:8em !important;
+  margin-left:0.8em;
+  color:#59c0be;
+}
+.inviteCard
+{
+  color:#f2c36a ;
+  text-align:center;
+  font-family: Fredoka One;
+}
+.inviteSquare
+{
+    width:22.5em;
+    height:5.0em;
+    margin-top:1.5em;
+    border-radius:15px;
+    border:2px solid #59c0be ;
+    margin-left:1.25em;
+}
+.selectText
+{
+ color:#59c0be ;
+ 
+  font-family: Fredoka One;
+  margin-left:2em;
+
+
+}
+
+.btnInvite{
+    border-radius: 50%;
+    width: 50%;
+    height:60px;
+    margin-left: 1em;
+     border:5px solid #bcc9d5 ;
+     color:#bcc9d5;
+}
+.searchUsername
+{
+  border-radius:11px;
+  width:200px;
+}
+ 
+ input[type="text"]
+ {
+
+   height:15px;
+   width:30px !important;
+  
+ }
+ 
+ .invitedName
+ {
+   font-family: Fredoka One;
+   color:#f2c36a ;
+   text-align: center;
+ }
+ 
+ 
+ .suggestion
+ {
+   font-family: Fredoka One;
+   color:#f2c36a ;
+   text-align: left;
+   margin-left:1.5em;
+
+ }
+ .button.button-calm
+ {
+    margin-left:8em;
+    font-size:10px;
+    font-family: Fredoka One;
+    width:18em;
+    border-radius:11px;
+    background: -webkit-linear-gradient(left, #e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* Standard syntax (must be last) */
+ }
+ .bar-assertive
+ {
+
+   background-color:white !important;
+ }
+ .bar-positive
+ {
+ background-color:white !important;
+
+ }
+
+ .profileImg
+ {
+   margin-top:-0.5em;
+ }
+ .FitImage
+ {
+
+    width:75%; 
+   height:100%;
+  
+ }
+ .divImage
+ {
+   top:50%;
+   left:50%;
+   width:50em;
+   height:28em;
+   margin-left:40em;
+
+ }
+ @media only screen and (max-width:450px)
+{
+ .divImage
+{
+   top:50%;
+   left:50%;
+   width:10em;
+   height:8em;
+   margin-left:0.5em;
+}
+	
+	
+}
+.profileName
+{
+
+  font-family: Fredoka One;
+  color:#e97269;
+  text-align: center;
+}
+.maincontainer
+{
+    margin-top:9em;
+
+
+}
+.tabDiv
+{
+  margin-top:2.5em !important;
+  width:23em;
+  height:15em;
+  border: 2px solid #59c0be;
+  border-radius:30px;
+}
+.button-bar
+{
+
+  background-color:transparent;
+  
+}
+.tabBar
+{
+ margin-top:-2.5em;
+
+
+}
+.btnprofile
+{
+  background-color:#59c0be !important;
+  border-radius:12px !important;
+  font-size:10px !important;
+  font-family: Fredoka One;
+  width:9em !important;
+
+}
+
+.personalTabContent
+{
+  color:#59c0be;
+  text-align:center;
+  margin-left:6em;
+font-family: Fredoka One;
+
+
+}
+.customToggle
+{
+  border:0 !important;
+  margin-top:2em;
+  margin-left:-0.5em;
+  color:#bcc9d5;
+  height:2.5em;
+  
+}
+.toggleColor
+{
+    background: -webkit-linear-gradient(left, #e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Fx 3.6 to 15 */
+    background:linear-gradient(to right,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 );
+    border-radius:0 !important;
+}
+.stats
+{
+
+  margin-top:1em;
+}
+.statsLogo
+{
+  border-radius:60%;
+	width:130%;
+	height:58px;
+  border:2px solid #bcc9d5;
+   moz-box-shadow:    1px 1px 2px 1px #ccc;
+   -webkit-box-shadow: 1px 1px 2px 1px #ccc;
+  box-shadow:         1px 1px 2px 1px #ccc;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+.toggleCol
+{
+  margin-top:5em;
+
+ 
+}
+.statsTabContent
+{
+ color:#59c0be;
+text-align:left;
+margin-left:6em;
+font-family: Fredoka One;
+margin-left:2em;
+margin-top:0.3em;
+
+}
+.popupProfilesvg
+{
+
+
+}
+
+.popuptext
+{
+  text-align:center;
+  font-family:Fredoka One;
+  color:#a6a6a6;
+  margin-left:7em;
+}
+.iniviteUsers
+{
+   margin-top:1.25em !important;
+
+}
+.ion-plus:before
+{
+
+  margin-top:0.25em;
+  font-size:35px !important;
+  
+}
+
+#mapid{
+ height: 180px;
+ margin-left:-2em;
+ position: static;
+}
+
+
+.yes-text 
+{
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  font-size: 70px;
+  color:#e97269;
+   opacity:0;
+ 
+}
+ .no-text {
+  position: absolute;
+  top: 150px;
+  right: 120px;
+  font-size: 70px;
+  color:#59c0be;
+  opacity:0;
+
+}
+
+.restaurantCard
+{
+  margin-bottom:5em;
+  height:10em;
+  width:12em;
+  margin-left:4em;
+}
+.owlview
+{
+  margin-left:-5.5em;
+}

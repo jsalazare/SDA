@@ -1,0 +1,224 @@
+pane {
+  background-color: #333;
+}
+
+.bar.bar-transparent 
+{
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+
+.bar .title {
+  color: #eee;
+}
+
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+
+.tile 
+{
+  color: #fff;
+  height: 100px;
+  padding: 10px;
+  border-radius:11%;
+  border: 2px solid #bcc9d5 ;
+}
+.tile-logo-bar 
+{
+  height: 70px;
+}
+
+.tile-nav-bar 
+{
+  padding: 0;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+
+.title-image
+{
+    margin-top: 10px;
+    height: 50px;
+    margin-left:35%;
+}
+.navbarLogo
+{
+  height:80px;
+}
+
+
+.tile-double 
+{
+   height: 150px;
+   moz-box-shadow:    1px 1px 2px 1px #ccc;
+   -webkit-box-shadow: 1px 1px 2px 1px #ccc;
+  box-shadow:         1px 1px 2px 1px #ccc;
+
+}
+.tile + .tile 
+{
+  margin-top: 10px;
+  height: 90px;
+}
+
+.tile-icon 
+{
+  padding: 0;
+  text-align: center;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.tile-title 
+{
+  position: relative;
+  text-align: center;
+}
+.tile-title > h1 
+{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+  margin: 0;
+}
+.tile-image 
+{
+ 
+  background-size: 57% 41%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.styledTiles
+{
+  	font-family: 'Fredoka One';
+    color: #a6a6a6
+  ;
+
+    
+    text-align:center; 
+    margin-top:8.0em;
+    margin-left:-0.5em;
+    
+}
+
+.round-button 
+{
+	width:16%;
+  height:9%;
+  margin-top:31em;
+  margin-left:11em;
+ 
+  
+	
+
+    border-radius: 50%;
+    background: -webkit-linear-gradient(left, #e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* Standard syntax (must be last) */
+   
+}
+.round-button-circle 
+{
+  width:70%;
+  height:70%;
+  top:15%;
+  border-radius:50%;
+  background-repeat: no-repeat;
+  background-size: 95% 95%;
+  background-color:white;
+  position: relative;
+
+   
+}
+
+
+
+
+
+@media (min-width: 600px) 
+{
+  .tile 
+    {
+   -webkit-transition: all linear .5s;
+    transition: all linear .5s;
+    height: 150px;
+    padding: 20px;
+  }
+  .tile-double 
+  {
+    height: 300px;
+ }
+  .tile + .tile 
+  {
+    margin-top: 10px;
+    height: 140px;
+  }
+  .tile-icon
+  {
+    padding: 0;
+    font-size: 60px;
+    line-height: 150px;
+  }
+  .tile-title > h1 
+  {
+    font-size: 32px;
+  }
+
+  .styledTiles
+{
+  	font-family: 'Fredoka One';
+    color: #a6a6a6
+;
+    text-align:center; 
+    margin-top:13.5em ;
+    margin-left:-1em;
+    font-size:15px;
+}
+
+.round-button 
+{
+	width:4%;
+  height:9%;
+  margin-top:39em;
+  margin-left:52.5em;
+ 
+  
+	
+
+    border-radius: 50%;
+    background: -webkit-linear-gradient(left, #e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,#e97269 ,#f2c36a ,#59c0be ,#bcc9d5 ); /* Standard syntax (must be last) */
+   
+}
+.round-button-circle 
+{
+  width:70%;
+  height:70%;
+  top:15%;
+  border-radius:50%;
+  background-repeat: no-repeat;
+  background-size: 95% 95%;
+  background-color:white;
+  position: relative;
+
+   
+}
+
+
+}
